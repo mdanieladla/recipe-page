@@ -152,3 +152,60 @@ font-family: 'Playfair Display', serif;
     margin-left: 12px;
     margin-bottom: 13px;
 }
+
+.cracker{
+    font-family: var(--playfair-font);
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 21px;
+    color: rgba(51, 51, 51, 1);
+    margin-left: 13px;
+    margin-bottom: 24px;
+}
+
+/*Form*/
+.input{
+    width: 21px;
+    height: 21px;
+    margin-left: 13px;
+}
+
+.label{
+    font-family: var(--montserrat-font);
+    font-size: .875rem;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    line-height: 25px;
+}
+
+.bold{
+    font-weight: 700;
+    color: black;
+}
+
+.span-left{
+    margin-left: 40px;
+}
+
+/*Ingredientes*/
+.cheescake{
+    font-family: var(--playfair-font);
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 21px;
+    color: rgba(51, 51, 51, 1);
+    margin: 40px 0 24px 13px;
+    margin-left: 13px;
+    margin-bottom: 24px;
+}
+
+/*Instrucciones*/
+.instructions-title{
+    font-family: var(--playfair-font);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: rgba(51, 51, 51, 1);
+    margin: 30px 0 28px 12px;
+}
