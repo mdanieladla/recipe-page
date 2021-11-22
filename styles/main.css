@@ -29,8 +29,6 @@ font-family: 'Playfair Display', serif;
 .dots{
     box-sizing: border-box;
     margin: 15px 12px 0 11px;
-    /* margin-left: 11px;
-    margin-right: 12px; */
 }
 
 .description-par{
@@ -269,7 +267,7 @@ font-family: 'Playfair Display', serif;
 @media all and (min-width: 1024px){
    body{
     margin-left: 14rem;
-    margin-right: 14rem;
+    margin-right: 30rem;
 } 
 
 /*HEADER*/
@@ -280,7 +278,6 @@ font-family: 'Playfair Display', serif;
 
 /*MAIN*/
 .description-par{
-    padding-right: 280px;
     font-size: .875rem;
     line-height: 17px;
 }
@@ -289,16 +286,19 @@ font-family: 'Playfair Display', serif;
     width: 969px;
     height: 444px;
 }
-/*Contenedor para darle grid a la página para desktop*/
-.container-mediaq{
-    display: grid;
-    grid-template-columns: 70% 30%;
-}
+
 /*Sección para darle a la parte de tiempo de prep estilo*/
 .icons-section{
-    /* grid-row-start: 2; */
-    grid-column-start: 2;
-    grid-column-end: 3;
+    padding-top: 30px;
+    padding-left: 30px;
+    position: absolute;
+    right: 150px;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    -webkit-box-shadow: -1px 2px 10px 2px rgba(189,187,189,1);
+-moz-box-shadow: -1px 2px 10px 2px rgba(189,187,189,1);
+box-shadow: -1px 2px 10px 2px rgba(189,187,189,1);
 } 
 
 .utensils{
@@ -353,27 +353,8 @@ font-family: 'Playfair Display', serif;
     grid-column-start: 1;
 }
 /*Form*/
-.form{
-    grid-column-start: 1;
-    display: grid;
-    grid-template-columns: 10% 90%;
-}
-
-.input{
-    grid-column-start:  1;
-}
-
 .label{
     font-size: 1rem;
-}
-
-/*Instrucciones*/
-.instructions-title{
-    grid-column-start: 1;
-}
-
-.instructions{
-    grid-column-start: 1;
 }
 
 .instructions-par{
@@ -382,9 +363,7 @@ font-family: 'Playfair Display', serif;
 
 /*Small source bottom*/
 .small-bottom{
-    grid-column-start: 1;
     font-size: 1rem;
     margin: 57px 0 19px 12px;
 }
-
 }
