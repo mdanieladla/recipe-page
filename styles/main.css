@@ -165,7 +165,13 @@ font-family: 'Playfair Display', serif;
 }
 
 /*Form*/
+.form{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
 .input{
+    grid-column-start: 1;
     width: 21px;
     height: 21px;
     margin-left: 13px;
@@ -182,10 +188,6 @@ font-family: 'Playfair Display', serif;
 .bold{
     font-weight: 700;
     color: black;
-}
-
-.span-left{
-    margin-left: 40px;
 }
 
 /*Ingredientes*/
@@ -228,7 +230,7 @@ font-family: 'Playfair Display', serif;
     align-items: center;
     font-family: var(--playfair-font);
     font-weight: 700;
-    font-size: 1,5rem;
+    font-size: 1.5rem;
 }
 
 .instructions-par{
@@ -252,7 +254,7 @@ font-family: 'Playfair Display', serif;
 
 /*FOOTER*/
 .footer{
-    margin: 129px auto 24px auto;
+    margin: 100px auto 24px auto;
     color: rgba(169, 169, 169, 1);
     text-align: center;
 }
@@ -261,4 +263,128 @@ font-family: 'Playfair Display', serif;
     color: rgba(169, 169, 169, 1);
     font-weight: bolder;
     text-decoration: none;
+}
+
+/*----------------MEDIA QUERIES--------------------------*/
+@media all and (min-width: 1024px){
+   body{
+    margin-left: 14rem;
+    margin-right: 14rem;
+} 
+
+/*HEADER*/
+.header__title{
+    margin-top: 50px;
+    font-size: 3rem;
+}
+
+/*MAIN*/
+.description-par{
+    padding-right: 280px;
+    font-size: .875rem;
+    line-height: 17px;
+}
+
+.cheescake-img{
+    width: 969px;
+    height: 444px;
+}
+/*Contenedor para darle grid a la página para desktop*/
+.container-mediaq{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+/*Sección para darle a la parte de tiempo de prep estilo*/
+.icons-section{
+    /* grid-row-start: 2; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+} 
+
+.utensils{
+    width: 27px;
+    height: 27px;
+    margin-left: 0;
+}
+.yields{
+    font-size: .624rem;
+}
+
+.servings{
+    font-size: .875rem;
+}
+
+/*Diseño general para los 3 iconos del reloj*/
+.uil-clock{
+    width: 28px;
+    height: 28px;
+}
+/*Time div-> div grande que abarca los 3 divs pqueños*/
+.time-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*Div de prep-time*/
+.clock-icon{
+    margin-left: 0px;
+}
+
+/*Small, mins de cada div, mismo diseño*/
+.small{
+    font-size: .625rem;
+    line-height: 10px;
+}
+
+.mins{
+    font-size: .875rem;
+    line-height: 17px;
+}
+
+/*Ingredientes*/
+.ingredients-title{
+    font-size: 1.5rem;
+   line-height: 31px;
+} 
+
+.cracker, .cheescake{
+    font-size: 1.125rem;
+    line-height: 24px;
+    grid-column-start: 1;
+}
+/*Form*/
+.form{
+    grid-column-start: 1;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.input{
+    grid-column-start:  1;
+}
+
+.label{
+    font-size: 1rem;
+}
+
+/*Instrucciones*/
+.instructions-title{
+    grid-column-start: 1;
+}
+
+.instructions{
+    grid-column-start: 1;
+}
+
+.instructions-par{
+    line-height: 24px;
+}
+
+/*Small source bottom*/
+.small-bottom{
+    grid-column-start: 1;
+    font-size: 1rem;
+    margin: 57px 0 19px 12px;
+}
+
 }
