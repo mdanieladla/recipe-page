@@ -3,3 +3,152 @@ Fonts:
 font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif;
 */
+
+/*VARIABLES*/
+:root{
+    --playfair-font: 'Playfair Display', serif;
+    --montserrat-font: 'Montserrat', sans-serif;
+}
+
+/*HEADER*/
+.header__title{
+    margin: 32px 0 12px 11px;
+    font-family: var(--playfair-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/*MAIN*/
+.description-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.dots{
+    box-sizing: border-box;
+    margin: 15px 12px 0 11px;
+    /* margin-left: 11px;
+    margin-right: 12px; */
+}
+
+.description-par{
+    margin: 12px 19px 12px 12px;
+    font-style: italic;
+    font-family: var(--montserrat-font);
+    font-size: .75rem;
+    line-height: 14px;
+    color: rgba(79, 79, 79, 1);
+}
+
+.cheescake-img{
+    border-radius: 15px;
+    margin: 0 0 24px 11px;
+    width: 352px;
+    height: 202px;
+}
+
+/*Servings div-> utensils, yields, 12 servings.*/
+.servings-div{
+    display: flex;
+    flex-direction: row;
+}
+
+.utensils{
+    color: rgba(242, 153, 74, 1);
+    width: 20px;
+    height: 20px;
+    margin: 0 5px 32px 13px;
+}
+
+.yields-servings{
+    display: flex;
+    flex-direction: column;
+}
+
+.yields{
+    font-size: .6rem;
+    text-transform: uppercase;
+    font-family: var(--montserrat-font);
+    font-weight: 700;
+    color: rgba(189, 189, 189, 1);
+}
+
+.servings{
+    color: rgba(242, 153, 74, 1);
+    font-size: .8rem;
+    font-family: var(--montserrat-font);
+    font-weight: 500;
+}
+
+/*Time div*/
+/*Diseño general para los 3 iconos del reloj*/
+.uil-clock{
+    color: rgba(79, 79, 79, 1);
+    width: 14px;
+    height: 14px;
+    margin-right: 5.4px;
+}
+/*Time div-> div grande que abarca los 3 divs pqueños*/
+.time-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*Div de prep-time*/
+.prep-div{
+    display: flex;
+    flex-direction: row;
+}
+
+.clock-icon{
+    margin-left: 12px;
+}
+/*Div de cook-time*/
+.cook-div{
+    display: flex;
+    flex-direction: row;
+}
+/*Div de total time*/
+.total-div{
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+}
+
+/*Divs de los small y span*/
+.preps{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Small de cada div, mismo diseño*/
+.small{
+    font-family: var(--montserrat-font);
+    font-weight: 700;
+    font-size: .6rem;
+    text-transform: uppercase;
+    line-height: 8px;
+    color: rgba(189, 189, 189, 1);
+}
+
+.mins{
+    font-family: var(--montserrat-font);
+    font-weight: 500;
+    font-size: .7rem;
+    line-height: 12px;
+    margin-bottom: 30px;
+    color: rgba(51, 51, 51, 1);
+}
+
+/*Ingredientes*/
+.ingredients-title{
+    font-family: var(--playfair-font);
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 24px;
+    color: rgba(51, 51, 51, 1);
+    margin-left: 12px;
+    margin-bottom: 13px;
+}
