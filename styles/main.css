@@ -209,3 +209,56 @@ font-family: 'Playfair Display', serif;
     color: rgba(51, 51, 51, 1);
     margin: 30px 0 28px 12px;
 }
+
+.instructions{
+    display: grid;
+    grid-template-columns: 10% 80%;
+    grid-gap: 20px;
+}
+
+.div-1{
+    margin-left: 12px;
+    background-color: rgba(242, 153, 74, 1);
+    width: 36px;
+    height: 36px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--playfair-font);
+    font-weight: 700;
+    font-size: 1,5rem;
+}
+
+.instructions-par{
+    color: rgba(0, 0, 0, 1);
+    font-family: var(--montserrat-font);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 12px;
+    line-height: 20px;
+}
+
+/*Small source bottom*/
+.small-bottom{
+    text-align: center;
+    color: rgba(189, 189, 189, 1);
+    font-size: .75rem;
+    font-family: var(--montserrat-font);
+    font-weight: 400;
+    margin: 26px 0 129px 12px;
+}
+
+/*FOOTER*/
+.footer{
+    margin: 129px auto 24px auto;
+    color: rgba(169, 169, 169, 1);
+    text-align: center;
+}
+
+.link{
+    color: rgba(169, 169, 169, 1);
+    font-weight: bolder;
+    text-decoration: none;
+}
